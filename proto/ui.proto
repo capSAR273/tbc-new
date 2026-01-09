@@ -104,24 +104,14 @@ enum Expansion {
 	ExpansionUnknown = 0;
 	ExpansionVanilla = 1;
 	ExpansionTbc = 2;
-	ExpansionWotlk = 3;
-	ExpansionCata = 4;
-	ExpansionMop = 5;
 }
 
 enum DungeonDifficulty {
 	DifficultyUnknown = 0;
 	DifficultyNormal = 1;
 	DifficultyHeroic = 2;
-	DifficultyTitanRuneAlpha = 7;
-	DifficultyTitanRuneBeta = 8;
-	DifficultyCelestial = 10;
 	DifficultyRaid10 = 3;
-	DifficultyRaid10H = 4;
 	DifficultyRaid25 = 5;
-	DifficultyRaid25H = 6;
-	DifficultyRaid25RF = 9;
-	DifficultyRaidFlex = 11;
 	DifficultyVendor = 12;
 }
 
@@ -140,38 +130,26 @@ enum RepLevel {
 // Use the faction ID for the field index
 enum RepFaction {
 	RepFactionUnknown = 0;
-	RepFactionTheEarthenRing = 1135;
-	RepFactionGuardiansOfHyjal = 1158;
-	RepFactionTherazane = 1171;
-	RepFactionDragonmawClan = 1172;
-	RepFactionRamkahen = 1173;
-	RepFactionWildhammerClan = 1174;
-	RepFactionBaradinsWardens = 1177;
-	RepFactionHellscreamsReach = 1178;
-	RepFactionAvengersOfHyjal = 1204;
-
-    // MoP Reputations
-    RepFactionGoldenLotus              = 1269;
-    RepFactionTheTillers               = 1272;
-    RepFactionShadoPan                 = 1270;
-    RepFactionShadoPanAssault          = 1435;
-    RepFactionTheBrewmasters           = 1351;
-    RepFactionTheKlaxxi                = 1337;
-    RepFactionTheAugustCelestials      = 1341;
-    RepFactionTheAnglers               = 1302;
-    RepFactionEmperorShaohao           = 1492;
-    RepFactionSunreaverOnslaught       = 1388;
-    RepFactionKirinTorOffensive        = 1387;
-    RepFactionDominanceOffensive       = 1375;
-    RepFactionOrderOfTheCloudSerpent   = 1271;
-    RepFactionShangXisAcademy          = 1216;
-    RepFactionTheLorewalkers           = 1345;
-    RepFactionTheBlackPrince           = 1359;
-    RepFactionForestHozen              = 1228;
-    RepFactionPearlfinJinyu            = 1242;
-    RepFactionHozen                    = 1243;
-    RepFactionOperationShieldwall      = 1376;
-
+	RepFactionHonorHold = 946;
+	RepFactionThrallmar = 947;
+	RepFactionCenarionExpedition = 942;
+	RepFactionLowerCity = 1011;
+	RepFactionTheShatar = 935;
+	RepFactionKeepersOfTime = 989;
+	RepFactionAshtongueDeathsworn = 1012;
+	RepFactionShatteredSunOffensive = 1077;
+	RepFactionScaleOfTheSands = 990;
+	RepFactionTheVioletEye = 967;
+	RepFactionTheKurenai = 978;
+	RepFactionMaghar = 941;
+	RepFactionNetherwing = 1015;
+	RepFactionOgrila = 1038;
+	RepFactionAldor = 932;
+	RepFactionScryers = 934;
+	RepFactionShatariSkyguard = 1031;
+	RepFactionSporeggar = 970;
+	RepFactionConsortium = 933;
+	RepFactionTranquillien = 922;
 }
 
 message UIItemSource {
@@ -248,7 +226,6 @@ message UIGem {
 	ItemQuality quality = 7;
 	bool unique = 8;
 	Profession required_profession = 9;
-	bool disabled_in_challenge_mode = 10;
 }
 
 message IconData {
@@ -268,18 +245,20 @@ enum SourceFilterOption {
 	SourceDungeon = 5;
 	SourceDungeonH = 6;
 	SourceRaid = 7;
-	SourceRaidH = 8;
-	SourceRaidRF = 9;
-	SourceRaidFlex = 10;
+	SourceWorldBoss = 8;
 }
 
 enum RaidFilterOption {
 	RaidUnknown = 0;
-	RaidMogushanVaults = 1;
-	RaidHeartOfFear = 2;
-	RaidTerraceOfEndlessSpring = 3;
-	RaidThroneOfThunder = 4;
-	RaidSiegeOfOrgrimmar = 5;
+	RaidGruulsLair = 1;
+	RaidMagtheridonsLair = 2;
+	RaidKarazhan = 3;
+	RaidSerpentShrineCavern = 4;
+	RaidTempestKeep = 5;
+	RaidBlackTemple = 6;
+	RaidHyjalSummit = 7;
+	RaidZulAman = 8;
+	RaidSunwell = 9;
 }
 
 // NextIndex: 24
@@ -310,8 +289,6 @@ message DatabaseFilters {
 	repeated int32 favorite_gems = 12;
 	// Item IDs for favorited random suffixes.
 	repeated int32 favorite_random_suffixes = 22;
-	// Item IDs for favorited reforges.
-	repeated int32 favorite_reforges = 23;
 	// Uniquely-identifying strings for favorited enchants.
 	repeated string favorite_enchants = 13;
 }
@@ -351,20 +328,6 @@ message IndividualSimSettings {
 	Stat tank_ref_stat = 14;
 	UnitStats stat_caps = 16 [deprecated=true];
 	UnitStats breakpoint_limits = 17 [deprecated=true];
-	ReforgeSettings reforge_settings = 18;
-}
-
-message ReforgeSettings {
-	bool use_custom_ep_values = 1;
-	bool use_soft_cap_breakpoints = 2;
-	bool include_timeout = 3;
-	bool include_gems = 4;
-	bool include_eotb_gem_socket = 5;
-	bool freeze_item_slots = 6;
-	repeated ItemSlot frozen_item_slots = 7;
-	UIStat relative_stat_cap_stat = 8;
-	UnitStats stat_caps = 9 ;
-	UnitStats breakpoint_limits = 10;
 }
 
 message StatCapConfig {
@@ -457,8 +420,6 @@ message SavedSettings {
 	bool in_front_of_target = 11;
 	double distance_from_target = 12;
 	HealingModel healing_model = 13;
-	double dark_intent_uptime = 19;
-	bool challenge_mode = 20;
 }
 
 message SavedTalents {

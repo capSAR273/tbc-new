@@ -244,7 +244,6 @@ export const professionI18nKeys: Record<Profession, string> = {
 	[Profession.Enchanting]: 'enchanting',
 	[Profession.Engineering]: 'engineering',
 	[Profession.Herbalism]: 'herbalism',
-	[Profession.Inscription]: 'inscription',
 	[Profession.Jewelcrafting]: 'jewelcrafting',
 	[Profession.Leatherworking]: 'leatherworking',
 	[Profession.Mining]: 'mining',
@@ -262,18 +261,20 @@ export const sourceFilterI18nKeys: Record<SourceFilterOption, string> = {
 	[SourceFilterOption.SourceDungeon]: 'dungeon',
 	[SourceFilterOption.SourceDungeonH]: 'dungeon_h',
 	[SourceFilterOption.SourceRaid]: 'raid',
-	[SourceFilterOption.SourceRaidH]: 'raid_h',
-	[SourceFilterOption.SourceRaidRF]: 'raid_rf',
-	[SourceFilterOption.SourceRaidFlex]: 'raid_flex',
+	[SourceFilterOption.SourceWorldBoss]: 'wboss',
 };
 
 export const raidFilterI18nKeys: Record<RaidFilterOption, string> = {
 	[RaidFilterOption.RaidUnknown]: 'unknown',
-	[RaidFilterOption.RaidMogushanVaults]: 'mogushan_vaults',
-	[RaidFilterOption.RaidHeartOfFear]: 'heart_of_fear',
-	[RaidFilterOption.RaidTerraceOfEndlessSpring]: 'terrace_of_endless_spring',
-	[RaidFilterOption.RaidThroneOfThunder]: 'throne_of_thunder',
-	[RaidFilterOption.RaidSiegeOfOrgrimmar]: 'siege_of_orgrimmar',
+	[RaidFilterOption.RaidGruulsLair]: 'gruuls_lair',
+	[RaidFilterOption.RaidMagtheridonsLair]: 'magtheridons_lair',
+	[RaidFilterOption.RaidKarazhan]: 'karazhan',
+	[RaidFilterOption.RaidSerpentShrineCavern]: 'serpent_shrine_cavern',
+	[RaidFilterOption.RaidTempestKeep]: 'tempest_keep',
+	[RaidFilterOption.RaidBlackTemple]: 'black_temple',
+	[RaidFilterOption.RaidHyjalSummit]: 'hyjal_summit',
+	[RaidFilterOption.RaidZulAman]: 'zul_aman',
+	[RaidFilterOption.RaidSunwell]: 'sunwell',
 };
 
 export const armorTypeI18nKeys: Record<ArmorType, string> = {

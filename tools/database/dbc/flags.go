@@ -92,7 +92,6 @@ const (
 	ROLE_TANK                             ItemStaticFlags1 = 0x02000000
 	ROLE_HEALER                           ItemStaticFlags1 = 0x04000000
 	ROLE_DAMAGE                           ItemStaticFlags1 = 0x08000000
-	CAN_DROP_IN_CHALLENGE_MODE            ItemStaticFlags1 = 0x10000000
 	NEVER_STACK_IN_LOOT_UI                ItemStaticFlags1 = 0x20000000
 	DISENCHANT_TO_LOOT_TABLE              ItemStaticFlags1 = 0x40000000
 	CAN_BE_PLACED_IN_REAGENT_BANK         ItemStaticFlags1 = 0x80000000
