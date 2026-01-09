@@ -27,11 +27,11 @@
 		"search": "Search",
 		"filter": "Filter",
 		"phases": {
-			"1": "Phase 1 (5.0 - T14)",
-			"2": "Phase 2 (5.1)",
-			"3": "Phase 3 (5.2 - T15)",
-			"4": "Phase 4 (5.3)",
-			"5": "Phase 5 (5.4 - T16)"
+			"1": "Phase 1 (2.0 - T4)",
+			"2": "Phase 2 (2.1 - T5)",
+			"3": "Phase 3 (2.3 - T6)",
+			"4": "Phase 4 (2.4 - Zul'Aman)",
+			"5": "Phase 5 (2.5 - Sunwell)"
 		},
 		"tanks": {
 			"title": "Tanks",
@@ -67,17 +67,19 @@
 			"dungeon": "Dungeon",
 			"dungeon_h": "Dungeon (H)",
 			"raid": "Raid",
-			"raid_h": "Raid (H)",
-			"raid_rf": "Raid (RF)",
-			"raid_flex": "Raid (Flex)"
+			"wboss": "World Boss"
 		},
 		"raids": {
 			"unknown": "Unknown",
-			"mogushan_vaults": "Mogu'shan Vaults",
-			"heart_of_fear": "Heart of Fear",
-			"terrace_of_endless_spring": "Terrace of Endless Spring",
-			"throne_of_thunder": "Throne of Thunder",
-			"siege_of_orgrimmar": "Siege of Orgrimmar"
+			"gruuls_lair": "Gruul's Lair",
+			"magtheridons_lair": "Magtheridon's Lair",
+			"karazhan": "Karazhan",
+			"serpentshrine_cavern": "Serpentshrine Cavern",
+			"tempest_keep": "Tempest Keep",
+			"black_temple": "Black Temple",
+			"hyjal_summit": "Hyjal Summit",
+			"zul_aman": "Zul'Aman",
+			"sunwell": "Sunwell Plateau"
 		},
 		"armor_types": {
 			"unknown": "Unknown",
@@ -121,12 +123,7 @@
 			"energy": "Energy",
 			"rage": "Rage",
 			"focus": "Focus",
-			"holy_power": "Holy Power",
-			"shadow_orbs": "Shadow Orbs",
 			"combo_points": "Combo Points",
-			"maelstrom": "Maelstrom",
-			"demonic_fury": "Demonic Fury",
-			"burning_embers": "Burning Embers",
 			"generic_resource": "Missing Resource!"
 		},
 		"stats": {
@@ -196,47 +193,10 @@
 			"nature_resistance": "Nature Resistance",
 			"shadow_resistance": "Shadow Resistance"
 		},
-		"mastery_spell_names": {
-			"unknown": "Unknown",
-			"potent_poisons": "Potent Poisons",
-			"main_gauche": "Main Gauche",
-			"executioner": "Executioner",
-			"blood_shield": "Blood Shield",
-			"frozen_heart": "Frozen Heart",
-			"dreadblade": "Dreadblade",
-			"total_eclipse": "Total Eclipse",
-			"razor_claws": "Razor Claws",
-			"natures_guardian": "Nature's Guardian",
-			"harmony": "Harmony",
-			"illuminated_healing": "Illuminated Healing",
-			"divine_bulwark": "Divine Bulwark",
-			"hand_of_light": "Hand of Light",
-			"elemental_overload": "Elemental Overload",
-			"enhanced_elements": "Enhanced Elements",
-			"deep_healing": "Deep Healing",
-			"master_of_beasts": "Master of Beasts",
-			"wild_quiver": "Wild Quiver",
-			"essence_of_the_viper": "Essence of the Viper",
-			"strikes_of_opportunity": "Strikes of Opportunity",
-			"unshackled_fury": "Unshackled Fury",
-			"critical_block": "Critical Block",
-			"mana_adept": "Mana Adept",
-			"ignite": "Ignite",
-			"icicles": "Icicles",
-			"shield_discipline": "Shield Discipline",
-			"echo_of_light": "Echo of Light",
-			"shadow_orb_power": "Shadow Orb Power",
-			"potent_afflictions": "Potent Afflictions",
-			"master_demonologist": "Master Demonologist",
-			"emberstorm": "Emberstorm",
-			"elusive_brawler": "Elusive Brawler",
-			"gift_of_the_serpent": "Gift of the Serpent",
-			"bottled_fury": "Bottled Fury"
-		},
 		"currency": {
-			"valorPoints": "Valor Points",
-			"justicePoints": "Justice Points",
-			"honorPoints": "Honor Points"
+			"badgeJustice": "Badge of Justice",
+			"honorPoints": "Honor Points",
+			"arenaPoints": "Arena Points"
 		},
 		"copy_button": {
 			"default_text": "Copy to Clipboard",
@@ -305,17 +265,6 @@
 			"title": "Gem Summary",
 			"reset_gems": "Reset gems"
 		},
-		"reforge_summary": {
-			"title": "Reforge Summary",
-			"reset_reforges": "Reset Reforges",
-			"copy_to_reforge_lite": "Copy to Reforge Lite"
-		},
-		"reforge_success": {
-			"title": "The following items were reforged:",
-			"removed_reforge": "Removed reforge",
-			"no_changes": "No reforge changes were made!",
-			"copy_to_reforge_lite": "Copy to Reforge Lite"
-		},
 		"gear_sets": {
 			"title": "Gear Sets",
 			"gear_set": "Gear Set",
@@ -327,8 +276,6 @@
 				"items": "Item",
 				"random_suffix": "Random Suffix",
 				"enchants": "Enchants",
-				"tinkers": "Tinkers",
-				"reforging": "Reforging",
 				"upgrades": "Upgrades",
 				"gem1": "Gem",
 				"gem2": "Gem",
@@ -336,10 +283,7 @@
 			},
 			"remove_buttons": {
 				"remove_enchant": "Remove Enchant",
-				"remove_tinkers": "Remove Tinkers",
-				"remove_reforge": "Remove Reforge",
 				"remove_random_suffix": "Remove Random Suffix",
-				"remove_upgrade": "Remove Upgrade",
 				"remove_gem": "Remove Gem"
 			},
 			"filters": {
@@ -396,16 +340,10 @@
 			"ranged_weapon_speed": "Ranged Weapon Speed",
 			"min_ranged_speed": "Min Ranged Speed",
 			"max_ranged_speed": "Max Ranged Speed",
-			"reforge_text": "Reforged {{fromAmount}} {{fromStat}} → {{toAmount}} {{toStat}}"
 		},
 		"preset_configurations": {
 			"title": "Preset Configurations",
 			"tooltip": "Preset configurations can apply an optimal combination of gear, talents, rotation and encounter settings."
-		},
-		"upgrade_summary": {
-			"title": "Remaining Upgrade Costs",
-			"upgrade_all_items": "Upgrade all items",
-			"reset_upgrades": "Reset Upgrades"
 		}
 	},
 	"settings_tab": {
@@ -460,10 +398,6 @@
 		},
 		"other": {
 			"title": "Other",
-			"challenge_mode": {
-				"label": "Challenge Mode",
-				"tooltip": "Enables Challenge Mode"
-			},
 			"input_delay": {
 				"label": "Input Delay",
 				"tooltip": "Player input delay, in milliseconds. Specifies the maximum delay on actions that cannot be spell queued, such as spell casts that are waiting on resource gains or waiting for a cooldown to expire. Also used with certain APL values (such as 'Aura Is Active With Reaction Time'). Roughly models the sum of reaction time + server latency."
@@ -511,10 +445,6 @@
 			"pet_uptime": {
 				"label": "Pet Uptime (%)",
 				"tooltip": "Percent of the fight duration for which your pet will be alive."
-			},
-			"glaive_toss_chance": {
-				"label": "Glaive Toss Success %",
-				"tooltip": "The chance that Glaive Toss hits secondary targets in percentages."
 			},
 			"detonate_seed": {
 				"label": "Detonate Seed on Cast",
@@ -624,18 +554,6 @@
 				"frenzy_time": {
 					"label": "Frenzy time",
 					"tooltip": "Simulation time (in seconds) at which to disable tank swaps and enable the boss Frenzy buff"
-				},
-				"spiritual_grasp_frequency": {
-					"label": "Spiritual Grasp frequency",
-					"tooltip": "Average time (in seconds) between Spiritual Grasp hits, following an exponential distribution"
-				},
-				"jalak_death_time": {
-					"label": "Jalak death time",
-					"tooltip": "Simulation time (in seconds) at which to disable War-God Jalak and trigger the Rampage buff on Horridon. If set longer than the simulated fight length, then Jalak will be tanked the entire time and Rampage will never be triggered."
-				},
-				"taunt_swap_for_triple_puncture": {
-					"label": "Taunt swap for Triple Puncture",
-					"tooltip": "If checked, taunt swap upon Jalak's death and on every other Triple Puncture application afterwards in order to limit stack accumulation on a single tank."
 				},
 				"movement_interval": {
 					"label": "Movement Interval",
@@ -1119,10 +1037,6 @@
 				"guardian_hotw_dps_rotation": {
 					"label": "HotW DPS Rotation",
 					"tooltip": "Executes optimized HotW DPS rotation using hardcoded algorithm."
-				},
-				"warlock_next_exhale_target": {
-					"label": "Target Next Exhale Target",
-					"tooltip": "Targets the next valid exhale target. If the current target is not the inhale target or no inhale has been cast, the target will not change."
 				}
 			},
 			"values": {
@@ -1285,18 +1199,6 @@
 				"max_combo_points": {
 					"label": "Max Combo Points",
 					"tooltip": "Amount of maximum available Combo Points."
-				},
-				"solar_energy": {
-					"label": "Solar Energy",
-					"tooltip": "Amount of currently available Solar Energy."
-				},
-				"lunar_energy": {
-					"label": "Lunar Energy",
-					"tooltip": "Amount of currently available Lunar Energy"
-				},
-				"current_eclipse_phase": {
-					"label": "Current Eclipse Phase",
-					"tooltip": "The eclipse phase the druid currently is in."
 				},
 				"generic_resource": {
 					"label": "{GENERIC_RESOURCE}",
@@ -1512,25 +1414,9 @@
 					"label": "New Savage Roar Duration",
 					"tooltip": "Returns duration of savage roar based on current combo points"
 				},
-				"warlock_hand_of_guldan_in_flight": {
-					"label": "Hand of Guldan in Flight",
-					"tooltip": "Returns <b>True</b> if the impact of Hand of Guldan currenty is in flight."
-				},
-				"warlock_haunt_in_flight": {
-					"label": "[DEPRECATED] Haunt In Flight",
-					"tooltip": "Returns <b>True</b> if Haunt currently is in flight."
-				},
 				"affliction_current_snapshot": {
 					"label": "Existing Raw Snapshot %",
 					"tooltip": "How much stronger your existing snapshot is relative to baseline. Ignores Haste and Crit. Not recommended to use unless you know what you're doing."
-				},
-				"affliction_exhale_window": {
-					"label": "Exhale Window",
-					"tooltip": "Configured leeway for exhaling inhaled DoTs."
-				},
-				"mage_current_combustion_dot_estimate": {
-					"label": "Combustion Dot Value",
-					"tooltip": "Returns the current estimated size of your Combustion Dot."
 				},
 				"protection_paladin_damage_taken_last_global": {
 					"label": "Damage Taken Last Global",
@@ -1607,7 +1493,6 @@
 				"focus": "Focus",
 				"energy": "Energy",
 				"combo_points": "Combo Points",
-				"eclipse": "Eclipse",
 				"cooldowns": "Cooldowns",
 				"placeholders": "Placeholders"
 			},
@@ -1643,11 +1528,6 @@
 					"use_base_value": "Use base value",
 					"use_base_value_tooltip": "If checked, will compare the current DoT to the the base value (on encounter start) of the DoT.",
 					"variable_assignment_tooltip": "Value to assign to variable '{{variableName}}'"
-				},
-				"eclipse_types": {
-					"lunar": "Lunar",
-					"solar": "Solar",
-					"neutral": "Neutral"
 				},
 				"rotation_types": {
 					"single_target": "Single Target",
@@ -1738,10 +1618,6 @@
 							"wrath_weaving": "Wrath-weaving"
 						}
 					},
-					"allow_aoe_berserk": {
-						"label": "Allow AoE Berserk",
-						"tooltip": "Allow Berserk usage in AoE rotation"
-					},
 					"roar_offset": {
 						"label": "Roar Offset",
 						"tooltip": "Minimum offset gained between current Rip and new Roar to allow a Roar clip"
@@ -1757,10 +1633,6 @@
 					"bite_time": {
 						"label": "Bite Time",
 						"tooltip": "Minimum seconds remaining before Rip or Roar should ideally be refreshed (including planned early clips) to allow a Bite"
-					},
-					"berserk_bite_time": {
-						"label": "Bite Time during Berserk",
-						"tooltip": "More aggressive threshold when Berserk is active"
 					}
 				}
 			},
@@ -1776,38 +1648,22 @@
 				"demo_roar_refresh_leeway": {
 					"label": "Demo Roar refresh leeway",
 					"tooltip": "Refresh Demoralizing Roar when remaining duration is less than this value (in seconds). Larger values provide safety buffer against misses, but at the cost of lower DPS."
-				},
-				"pulverize_refresh_leeway": {
-					"label": "Pulverize refresh leeway",
-					"tooltip": "Refresh Pulverize when remaining duration is less than this value (in seconds). Note that Mangle, Thrash, and Faerie Fire usage on cooldown takes priority over this rule, unless Lacerate itself is about to fall off."
 				}
 			},
 			"rogue": {
 				"apply_poisons_manually": {
 					"label": "Configure poisons manually",
 					"tooltip": "Prevent automatic poison configuration that is based on equipped weapons."
-				},
-				"subtlety": {
-					"honor_of_thieves_crit_rate": {
-						"label": "Honor of Thieves Crit Rate",
-						"tooltip": "Number of crits other group members generate within 100 seconds"
-					}
 				}
 			},
 			"shaman": {
 				"elemental": {
-					"thunderstorm_in_range": {
-						"label": "Thunderstorm In Range",
-						"tooltip": "When set to true, thunderstorm casts will cause damage."
-					}
+
 				}
 			},
 			"warlock": {
 				"affliction": {
-					"exhale_window": {
-						"label": "Soul Swap Exhale Window",
-						"tooltip": "How long, in milliseconds, before inhaled dots expire to exhale during multitarget encounters."
-					}
+					
 				}
 			},
 			"hunter": {
@@ -1945,18 +1801,8 @@
 				"energy_cost": "Energy Cost",
 				"focus_gain": "Focus Gain",
 				"focus_cost": "Focus Cost",
-				"holy_power_gain": "Holy Power Gain",
-				"holy_power_cost": "Holy Power Cost",
-				"shadow_orbs_gain": "Shadow Orbs Gain",
-				"shadow_orbs_cost": "Shadow Orbs Cost",
 				"combo_points_gain": "Combo Points Gain",
 				"combo_points_cost": "Combo Points Cost",
-				"maelstrom_gain": "Maelstrom Gain",
-				"maelstrom_cost": "Maelstrom Cost",
-				"demonic_fury_gain": "Demonic Fury Gain",
-				"demonic_fury_cost": "Demonic Fury Cost",
-				"burning_embers_gain": "Burning Embers Gain",
-				"burning_embers_cost": "Burning Embers Cost",
 				"gain": "Gain",
 				"gain_per_second": "Gain / s",
 				"avg_gain": "Avg Gain",
@@ -2032,11 +1878,7 @@
 			"feature_description": "This feature imports gear, race, talents, and professions. It does NOT import buffs, debuffs, consumes, rotation, or custom stats.",
 			"instructions": "To import, paste the output from the addon below and click, 'Import'.",
 			"upload_button": "Upload File",
-			"import_button": "Import",
-			"reforge_warning": {
-				"title": "Reforging issues",
-				"message": "There are known issues with Reforging when using the WSE addon. Always make sure to double check your reforges after importing."
-			}
+			"import_button": "Import"
 		}
 	},
 	"export": {
@@ -2153,8 +1995,6 @@
 			"profession_requirement": "{{itemName}} requires {{professionName}}, but it is not selected.",
 			"too_many_jc_gems": "Only 2 Jewelcrafting Gems are allowed, but {{count}} are equipped.",
 			"unspent_talent_points": "Missing required talent selections in row {{rowNumbers}}.",
-			"armor_specialization": "Equip {{armorType}} gear in each slot for the Armor Specialization (5% primary stat) effect.",
-			"dual_wield_2h_without_titans_grip": "Dual wielding two-handed weapon(s) without Titan's Grip spec.",
 			"shaman_fele_autocast": "Your Fire Elemental spell autocast setup is not optimal with the use of the Primal Elementalist talent (everything ON but Empower). If you know what you're doing, please ignore this."
 		},
 		"buttons": {
@@ -2251,37 +2091,6 @@
 				"saved_ep_weights": {
 					"title": "Saved EP weights"
 				}
-			},
-			"suggest_reforges": {
-				"title": "Suggest Reforges",
-				"tooltip": "Change Reforge Optimizer settings",
-				"use_soft_cap_breakpoints": "Use soft cap breakpoints",
-				"force_stat_proc": "Force RoRo proc",
-				"any": "Any",
-				"optimize_gems_tooltip": "Optimize gems and Reforges simultaneously.",
-				"freeze_item_slots_tooltip": "Flag one or more item slots to be \"frozen\", which will prevent the optimizer from changing the Reforge or gems in that slot from their current settings. This can be useful for hybrid classes who use the same gear piece for multiple raid roles.",
-				"edit_stat_caps": "Edit stat caps",
-				"stat_caps_tooltip": "Stat caps are the maximum amount of a stat that can be gained from Reforging. If a stat exceeds its cap, the optimizer will attempt to reduce it to the cap value.",
-				"reset_to_defaults": "Reset to stat cap defaults",
-				"stat": "Stat",
-				"select_preset": "Select preset",
-				"breakpoint_limit": "Breakpoint limit",
-				"breakpoint_limit_tooltip": "Allows you to set a custom breakpoint limit.",
-				"no_limit_set": "No limit set",
-				"breakpoints_implemented": "The following breakpoints have been implemented for this spec:",
-				"post_cap_ep": "Post cap EP",
-				"reforge_optimization_failed": "Reforge optimization failed. Please try again, or report the issue if it persists.",
-				"use_custom": "Use custom EP Weights",
-				"enable_modification": "This will enable modification of the default EP weights and setting custom stat caps.",
-				"modify_in_editor": "Ep weights can be modified in the Stat Weights editor.",
-				"hard_cap_info": "If you want to hard cap a stat make sure to put the EP for that stat higher.",
-				"edit_weights": "Edit weights",
-				"include_gems": "Include gems",
-				"freeze_item_slots": "Freeze item slots",
-				"include_eotbp_socket": "Include EotBP Socket",
-				"include_eotbp_socket_tooltip": "Allows the optimiser to also include the \"Eye of the Black Prince\" socket in the optimization.",
-				"limit_execution_time": "Limit execution time",
-				"limit_execution_time_tooltip": "If checked, the solver will error out if the total computation time exceeds 30 seconds. If unchecked, then total computation time will be capped at 1 hour instead."
 			}
 		},
 		"header": {
