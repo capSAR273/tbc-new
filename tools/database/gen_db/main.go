@@ -50,10 +50,6 @@ func main() {
 		db := database.ReadAtlasLootData(helper)
 		db.WriteJson(fmt.Sprintf("%s/atlasloot_db.json", inputsDir))
 		return
-	} else if *genAsset == "reforge-stats" {
-		//Todo: fill this when we have information from wowhead @ Neteyes - Gehennas
-		// For now, the version we have was taken from https://web.archive.org/web/20120201045249js_/http://www.wowhead.com/data=item-scaling
-		return
 	} else if *genAsset != "db" {
 		panic("Invalid gen value")
 	}

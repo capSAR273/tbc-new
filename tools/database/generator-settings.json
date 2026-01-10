@@ -28,7 +28,6 @@
 		"ItemSetSpell",
 		"ItemSubClass",
 		"ItemSubClassMask",
-		"ItemReforge",
 		"ItemBonus",
 		"ItemEffect",
 		"ItemClass",

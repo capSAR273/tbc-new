@@ -4,7 +4,7 @@ import { UIEnchant as Enchant, UIGem as Gem, UIItem as Item } from '../proto/ui'
 import { isBluntWeaponType, isSharpWeaponType } from '../proto_utils/utils';
 import { distinct, equalsOrBothNull, getEnumValues, sum } from '../utils';
 import { Database } from './database';
-import { EquippedItem, ReforgeData } from './equipped_item';
+import { EquippedItem } from './equipped_item';
 import { gemMatchesSocket, isMetaGemActive } from './gems';
 import { Stats } from './stats';
 import { validWeaponCombo } from './utils';
@@ -350,20 +350,6 @@ export class Gear extends BaseGear {
 
 		if (ignoreMeta) {
 			return curGear.withMetaGem(metaGem);
-		}
-
-		return curGear;
-	}
-
-	withoutReforges(canDualWield2H: boolean, ignoreSlots?: Set<ItemSlot>): Gear {
-		let curGear: Gear = this;
-
-		for (const slot of this.getItemSlots()) {
-			const item = this.getEquippedItem(slot);
-
-			if (item && !ignoreSlots?.has(slot)) {
-				curGear = curGear.withEquippedItem(slot, item.withItem(item.item).withRandomSuffix(item._randomSuffix), canDualWield2H);
-			}
 		}
 
 		return curGear;

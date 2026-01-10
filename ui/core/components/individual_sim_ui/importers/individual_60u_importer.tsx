@@ -64,12 +64,8 @@ export class Individual60UImporter<SpecType extends Spec> extends IndividualImpo
 
 			// As long as 60U exports the wrong suffixes we should
 			// inform the user that they need to manually add them.
-			// Due to this we also remove the reforge on the item.
 			if (itemJson.suffixId) {
 				hasRemovedRandomSuffix = true;
-				if (itemJson.reforge?.id) {
-					itemJson.reforge.id = null;
-				}
 				modifiedItemNames.push(itemJson.name);
 			}
 			equipmentSpec.items.push(itemSpec);

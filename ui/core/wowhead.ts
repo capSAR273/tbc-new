@@ -44,11 +44,6 @@ export type WowheadTooltipItemParams = {
 	 * */
 	randomEnchantmentId?: number;
 	/**
-	 * @description Reforges
-	 * @see forg - mapped value from wowhead
-	 * */
-	reforgeId?: number;
-	/**
 	 * @description Upgrades
 	 * @see upgd - mapped value from wowhead
 	 * */
@@ -114,9 +109,6 @@ export const buildWowheadTooltipDataset = async (options: WowheadTooltipItemPara
 		}
 		if (options.enchantIds) {
 			params.set('ench', options.enchantIds.join(':'));
-		}
-		if (options.reforgeId) {
-			params.set('forg', String(options.reforgeId));
 		}
 		if (options.randomEnchantmentId) {
 			params.set('rand', String(options.randomEnchantmentId));

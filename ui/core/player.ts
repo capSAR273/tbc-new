@@ -51,7 +51,7 @@ import {
 } from './proto/ui';
 import { ActionId } from './proto_utils/action_id';
 import { Database } from './proto_utils/database';
-import { EquippedItem, ReforgeData } from './proto_utils/equipped_item';
+import { EquippedItem } from './proto_utils/equipped_item';
 import { Gear, ItemSwapGear } from './proto_utils/gear';
 import { gemMatchesSocket, isUnrestrictedGem } from './proto_utils/gems';
 import { StatCap, Stats } from './proto_utils/stats';
@@ -473,12 +473,6 @@ export class Player<SpecType extends Spec> {
 	// Returns all enchants that this player can wear in the given slot.
 	getEnchants(slot: ItemSlot): Array<Enchant> {
 		return this.sim.db.getEnchants(slot).filter(enchant => canEquipEnchant(enchant, this.playerSpec));
-	}
-
-	// Returns all tinkers that this player can wear in the given slot.
-	// For the purpose of this function, they are all enchants still, however we split them since you can have both on the same item.
-	getTinkers(slot: ItemSlot): Array<Enchant> {
-		return this.sim.db.getEnchants(slot).filter(enchant => enchant.requiredProfession == Profession.Engineering);
 	}
 
 	// Returns all gems that this player can wear of the given color.
@@ -1052,14 +1046,6 @@ export class Player<SpecType extends Spec> {
 		const ep = this.computeStatsEP(new Stats(randomSuffix.stats));
 		this.randomSuffixEPCache.set(randomSuffix.id, ep);
 		return ep;
-	}
-
-	computeReforgingEP(reforging: ReforgeData): number {
-		let stats = new Stats([]);
-		stats = stats.addStat(reforging.fromStat, reforging.fromAmount);
-		stats = stats.addStat(reforging.toStat, reforging.toAmount);
-
-		return this.computeStatsEP(stats);
 	}
 
 	computeItemEP(item: Item, slot: ItemSlot): number {

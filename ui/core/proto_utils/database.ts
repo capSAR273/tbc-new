@@ -260,8 +260,6 @@ export class Database {
 				}
 			}
 		}
-		let tinker: Enchant | null = null;
-
 		const gems = itemSpec.gems.map(gemId => this.lookupGem(gemId));
 
 		let randomSuffix: ItemRandomSuffix | null = null;
@@ -272,7 +270,6 @@ export class Database {
 		return new EquippedItem({
 			item,
 			enchant,
-			tinker,
 			gems,
 			randomSuffix
 		});
